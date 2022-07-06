@@ -1,0 +1,106 @@
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.filter {
+  transition: color 250ms var(--cubic), background-color 250ms var(--cubic),
+    box-shadow 250ms var(--cubic);
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: var(--bgc-basic-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.filter-list {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 50px;
+}
+
+.portfolio-link {
+  transition: box-shadow 250ms var(--cubic);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.filter-items + .filter-items {
+  margin-left: 8px;
+}
+
+.filter-button {
+  height: 38px;
+
+  padding: 6px 22px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  color: var(--primary-tex-color);
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.portfolio-top-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-top-text {
+  position: absolute;
+  top: 0;
+
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: var(--bgc-basic-color);
+  background-color: #2196f3e5;
+  padding: 63px 24px;
+  @include size(null, 100%);
+  // height: 100%;
+  overflow: auto;
+  transform: translateY(100%);
+  transition: transform 300ms linear;
+
+  .portfolio-link:hover & {
+    transform: translateY(0);
+  }
+}
+
+.portfolio-disc {
+  border: 1px solid #eeeeee;
+  padding: 20px 24px;
+}
+
+.portfolio-title {
+  margin-bottom: 4px;
+
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-tex-color);
+}
+
+.portfolio-subtitle {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--secondary-text-color);
+}

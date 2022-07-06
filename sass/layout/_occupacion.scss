@@ -1,0 +1,40 @@
+.occupacion {
+  padding-bottom: 94px;
+
+  &-title {
+    margin-bottom: 50px;
+
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+  }
+
+  &-list {
+    display: flex;
+    margin-left: -30px;
+  }
+
+  &-item {
+    position: relative;
+
+    @include size(calc(100% / 3 - 30px), null);
+    // width: calc(100% / 3 - 30px);
+    margin-left: 30px;
+  }
+
+  &-item-text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--bgc-basic-color);
+    background-color: #2f303acc;
+
+    padding: 27px;
+  }
+}

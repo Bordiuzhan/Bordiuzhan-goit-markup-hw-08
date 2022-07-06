@@ -1,0 +1,31 @@
+.hero-buton {
+  @include size(200px, 50px);
+  border-radius: 4px;
+  border: 1px solid var(--accent-color);
+
+  display: block;
+  margin: 0px auto;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--bgc-basic-color);
+  background-color: var(--accent-color);
+
+  &-activ:hover,
+  &-activ:active {
+    background: $bag-col;
+  }
+}
+
+.active {
+  transition: color 250ms var(--cubic);
+  &:hover,
+  &:active,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
