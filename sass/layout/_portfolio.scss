@@ -19,12 +19,28 @@
 
 .filter-list {
   display: flex;
-  justify-content: center;
+  // justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 8px;
+  column-gap: 8px;
 
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+
+  @include tablet {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @include desktop {
+    margin-bottom: 50px;
+  }
 }
-
+//  ------cancelar tamano-----!!!!!!!!!!!!//
 .portfolio-link {
+  width: 450px;
+  @include tablet {
+    width: 354px;
+    height: 440px;
+  }
   transition: box-shadow 250ms var(--cubic);
 
   &:hover,
@@ -35,7 +51,7 @@
 }
 
 .filter-items + .filter-items {
-  margin-left: 8px;
+  // margin-left: 8px;
 }
 
 .filter-button {

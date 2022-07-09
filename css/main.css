@@ -812,19 +812,35 @@ body {
 
 .filter-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  row-gap: 8px;
+  column-gap: 8px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .filter-list {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter-list {
+    margin-bottom: 50px;
+  }
 }
 
 .portfolio-link {
+  width: 450px;
   transition: box-shadow 250ms var(--cubic);
+}
+@media screen and (min-width: 768px) {
+  .portfolio-link {
+    width: 354px;
+    height: 440px;
+  }
 }
 .portfolio-link:hover, .portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.filter-items + .filter-items {
-  margin-left: 8px;
 }
 
 .filter-button {
