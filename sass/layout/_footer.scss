@@ -7,12 +7,23 @@
 
 .footer > .container {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+
+  @include tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+  @include desktop {
+  }
 }
 
 .footer-logo {
   display: block;
   margin-bottom: 20px;
+  text-align: center;
 
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -20,6 +31,10 @@
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-color);
+
+  @include desktop {
+    text-align: start;
+  }
 }
 
 .footer-logo > span {
@@ -33,6 +48,16 @@
   color: var(--bgc-basic-color);
 }
 
+.footer-web {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include desktop {
+    align-items: flex-start;
+  }
+}
+
 .footer-web a {
   font-style: normal;
   font-size: 14px;
@@ -40,16 +65,15 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-web {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
 .footer-box-links {
   display: flex;
   flex-direction: column;
-  margin-left: 70px;
+  align-items: center;
+
+  @include desktop {
+    align-items: flex-start;
+    margin-left: 70px;
+  }
 }
 
 .footer-box-text {
@@ -61,7 +85,14 @@
   color: var(--bgc-basic-color);
 
   margin-bottom: 20px;
-  padding-top: 10px;
+  padding-top: 60px;
+
+  @include tablet {
+    padding-top: 0;
+  }
+  @include desktop {
+    padding-top: 10px;
+  }
 }
 
 .footer-box-list {
@@ -72,7 +103,7 @@
 
 .footer-box-icon {
   display: block;
-   @include size(44px, 44px);
+  @include size(44px, 44px);
   // width: 44px;
   // height: 44px;
   margin-left: 10px;
@@ -86,7 +117,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-   @include size(100%, 100%);
+  @include size(100%, 100%);
   // width: 100%;
   // height: 100%;
   background-color: rgba(255, 255, 255, 0.1);
@@ -112,11 +143,15 @@
 .subscribe {
   display: flex;
   flex-direction: column;
+  align-items: center;
 
-  margin-left: auto;
+  @include desktop {
+    margin-left: auto;
+    align-items: flex-start;
+  }
 }
 .subscribe-title {
-  padding-top: 10px;
+  padding-top: 60px;
   margin-bottom: 20px;
 
   font-weight: 700;
@@ -125,15 +160,32 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--bgc-basic-color);
+
+  @include desktop {
+    padding-top: 10px;
+  }
 }
 
 .subscribe-field {
   display: flex;
+  flex-direction: column;
+
+  @include desktop {
+    flex-direction: row;
+  }
+}
+
+.subscribe-label {
+  margin-bottom: 20px;
+
+  @include desktop {
+    margin-bottom: 0;
+  }
 }
 
 .subscribe-input {
-   @include size(358px, 50px);
-  // width: 358px;
+  @include size(450px, 50px);
+  // width: calc(100%);
   // height: 50px;
 
   margin-right: 5px;
@@ -145,6 +197,10 @@
   border-radius: 4px;
   outline: rgba(0, 0, 0, 0);
   color: var(--bgc-basic-color);
+
+  @include desktop {
+    @include size(358px, 50px);
+  }
 }
 
 .subscribe-btn {
