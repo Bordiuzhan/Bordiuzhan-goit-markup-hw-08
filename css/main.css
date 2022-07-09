@@ -245,11 +245,26 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   justify-content: center;
   margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .hero {
@@ -267,46 +282,86 @@ body {
 .hero-title {
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--bgc-basic-color);
 }
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    min-width: 1200px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
 
 .specifics {
-  padding: 94px 0px;
+  padding: 60px 0px;
+}
+@media screen and (min-width: 1200px) {
+  .specifics {
+    padding: 94px 0px;
+  }
 }
 
 .specifics-list {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
 }
-.specifics-list:not(:last-child) {
-  margin-left: 30px;
+@media screen and (min-width: 768px) {
+  .specifics-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .specifics-list {
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .specifics-list__card {
+    width: 354px;
+  }
 }
 
 .specifics-list__box {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
   height: 120px;
+  margin-bottom: 30px;
   background-color: #f5f4fa;
   border-radius: 4px;
-  margin-bottom: 30px;
 }
-
-.specifics-list__card:not(:first-child) {
-  margin-left: 30px;
+@media screen and (min-width: 768px) {
+  .specifics-list__box {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .specifics-list__box {
+    width: 270px;
+  }
 }
 
 .specifics-list__title {
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
+  text-align: center;
   text-transform: uppercase;
   color: var(--primary-tex-color);
+}
+@media screen and (min-width: 768px) {
+  .specifics-list__title {
+    text-align: start;
+  }
 }
 
 .specifics-list__content {
