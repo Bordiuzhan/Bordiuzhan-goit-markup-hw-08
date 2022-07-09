@@ -1,5 +1,9 @@
 .occupacion {
+  display: none;
   padding-bottom: 94px;
+  @include desktop {
+    display: block;
+  }
 
   &-title {
     margin-bottom: 50px;
