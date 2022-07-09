@@ -1,6 +1,10 @@
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .filter {
@@ -104,6 +108,14 @@
 .portfolio-disc {
   border: 1px solid #eeeeee;
   padding: 20px 24px;
+
+  height: auto;
+  @include tablet {
+    height: 140px;
+  }
+  @include desktop {
+    height: auto;
+  }
 }
 
 .portfolio-title {

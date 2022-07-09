@@ -2,6 +2,10 @@
   padding-top: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid #ececec;
+  display: none;
+  @include tablet {
+    display: block;
+  }
 }
 
 .header .container {
@@ -10,7 +14,10 @@
 }
 
 .logo {
-  margin-right: 93px;
+  margin-right: 88px;
+  @include desktop {
+    margin-right: 93px;
+  }
 
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -77,7 +84,11 @@
 
 .auth-nav.list {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
+  @include desktop {
+    flex-direction: row;
+  }
 }
 
 .auth-nav__link {
@@ -85,9 +96,13 @@
   align-items: stretch;
 
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: calc(14 / 12);
   color: var(--secondary-text-color);
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 
   &:hover,
   &:focus {
@@ -101,5 +116,8 @@
 }
 
 .auth-nav__list:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 10px;
+  @include desktop {
+    margin-right: 30px;
+  }
 }

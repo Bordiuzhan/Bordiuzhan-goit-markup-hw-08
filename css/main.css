@@ -109,12 +109,18 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
   background-color: #fff;
   border-radius: 4px;
   transition: transform 300ms linear;
   padding: 40px;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 
 .modal-clouse-btn {
@@ -797,8 +803,14 @@ body {
 }
 
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .filter {
@@ -888,6 +900,17 @@ body {
 .portfolio-disc {
   border: 1px solid #eeeeee;
   padding: 20px 24px;
+  height: auto;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-disc {
+    height: 140px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-disc {
+    height: auto;
+  }
 }
 
 .portfolio-title {
@@ -908,6 +931,12 @@ body {
   padding-top: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid #ececec;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    display: block;
+  }
 }
 
 .header .container {
@@ -916,13 +945,18 @@ body {
 }
 
 .logo {
-  margin-right: 93px;
+  margin-right: 88px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
+  }
 }
 
 .logo > span {
@@ -978,16 +1012,28 @@ body {
 
 .auth-nav.list {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+@media screen and (min-width: 1200px) {
+  .auth-nav.list {
+    flex-direction: row;
+  }
 }
 
 .auth-nav__link {
   display: flex;
   align-items: stretch;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.1666666667;
   color: var(--secondary-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .auth-nav__link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 .auth-nav__link:hover, .auth-nav__link:focus {
   fill: var(--accent-color);
@@ -999,5 +1045,10 @@ body {
 }
 
 .auth-nav__list:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .auth-nav__list:not(:last-child) {
+    margin-right: 30px;
+  }
 }/*# sourceMappingURL=main.css.map */
