@@ -181,8 +181,10 @@
 
 .subscribe-input {
   @include size(450px, 50px);
+  @include desktop {
+    margin-right: 5px;
+  }
 
-  margin-right: 5px;
   padding: 16px 15px;
 
   background-color: transparent;
