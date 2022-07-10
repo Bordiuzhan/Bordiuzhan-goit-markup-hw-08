@@ -137,7 +137,12 @@
   @include tablet {
     display: none;
   }
+  &:hover,
+  :focus {
+    fill: var(--accent-color);
+  }
 }
+
 .menu-mob {
   position: fixed;
   background-color: #fff;
@@ -174,8 +179,10 @@
   right: 25px;
   background-color: transparent;
   border: none;
-}
-.mob-nav {
+  &:hover,
+  :focus {
+    fill: var(--accent-color);
+  }
 }
 
 .mob-nav__list:not(:last-child) {

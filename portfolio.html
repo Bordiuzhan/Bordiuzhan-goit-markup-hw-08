@@ -67,6 +67,68 @@
             </li>
           </ul>
         </div>
+        <button type="button" class="menu-open-btn">
+          <svg class="" width="24" height="16">
+            <use href="./images/icons.svg#icon-menu-mob"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="menu-mob is-hidden">
+        <div class="container">
+          <div class="mob-menu__top">
+            <button type="button" class="menu-close-btn">
+              <svg class="" width="19" height="19">
+                <use href="./images/icons.svg#icon-close-btn-mob"></use>
+              </svg>
+            </button>
+            <ul class="mob-nav list">
+              <li class="mob-nav__list">
+                <a href="./index.html" class="mob-nav__link link active"
+                  >Студия</a
+                >
+              </li>
+              <li class="mob-nav__list">
+                <a href="./portfolio.html" class="mob-nav__link link active"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="mob-nav__list">
+                <a href="" class="mob-nav__link link active">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu__botton">
+            <ul class="auth-mob list">
+              <li class="auth-mob__list">
+                <a href="tel:+380961111111" class="auth-mob__link link active">
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li class="auth-mob__list">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="auth-mob__link link active"
+                >
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <ul class="mob-soc list">
+              <li class="mob-soc__list">
+                <a href="" class="mob-soc__item link">Instagram</a>
+              </li>
+              <li class="mob-soc__list">
+                <a href="" class="mob-soc__item link">Twitter</a>
+              </li>
+              <li class="mob-soc__list">
+                <a href="" class="mob-soc__item link">Facebook</a>
+              </li>
+              <li class="mob-soc__list">
+                <a href="" class="mob-soc__item link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -102,13 +164,34 @@
             <li class="portfolio-link">
               <a href="" class="link active">
                 <div class="portfolio-top-wrap">
-                  <img
-                    src="./images/portfolio1.jpeg"
-                    alt="ноутбук"
-                    width="370"
-                    height="294"
-                    class="portfolio-foto"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio1.jpeg                   1x,
+                        ./images/portfolio/portfolio-desc-1x2.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-tabl-1.jpeg   1x,
+                        ./images/portfolio/portfolio-tabl-1x2.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/team/portfolio-1.jpeg        1x,
+                        ./images/portfolio/portfolio-1x2.jpeg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio/portfolio-1.jpeg"
+                      alt="ноутбук"
+                      class="team-foto"
+                    />
+                  </picture>
                   <p class="portfolio-top-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -125,13 +208,34 @@
             <li class="portfolio-link">
               <a href="" class="link active">
                 <div class="portfolio-top-wrap">
-                  <img
-                    src="./images/portfolio2.jpeg"
-                    alt="два баскетболиста с мячом"
-                    width="370"
-                    height="294"
-                    class="portfolio-foto"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio2.jpeg                   1x,
+                        ./images/portfolio/portfolio-desc-2x2.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-tabl-2.jpeg   1x,
+                        ./images/portfolio/portfolio-tabl-2x2.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/team/portfolio-2.jpeg        1x,
+                        ./images/portfolio/portfolio-2x2.jpeg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio/portfolio-2.jpeg"
+                      alt="два баскетболиста с мячом"
+                      class="team-foto"
+                    />
+                  </picture>
                   <p class="portfolio-top-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -150,13 +254,35 @@
             <li class="portfolio-link">
               <a href="" class="link active">
                 <div class="portfolio-top-wrap">
-                  <img
-                    src="./images/portfolio3.jpeg"
-                    alt="постер ресторана"
-                    width="370"
-                    height="294"
-                    class="portfolio-foto"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio3.jpeg                   1x,
+                        ./images/portfolio/portfolio-desc-3x2.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-tabl-3.jpeg   1x,
+                        ./images/portfolio/portfolio-tabl-3x2.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/team/portfolio-3.jpeg        1x,
+                        ./images/portfolio/portfolio-3x2.jpeg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio/portfolio-3.jpeg"
+                      alt="постер ресторана"
+                      class="team-foto"
+                    />
+                  </picture>
+
                   <p class="portfolio-top-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -172,14 +298,35 @@
             </li>
             <li class="portfolio-link">
               <a href="" class="link active">
-                <div class="portfolio-top-wrap">
-                  <img
-                    src="./images/portfolio4.jpeg"
-                    alt="наушники"
-                    width="370"
-                    height="294"
-                    class="portfolio-foto"
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio4.jpeg                   1x,
+                      ./images/portfolio/portfolio-desc-4x2.jpeg 2x
+                    "
+                    media="(min-width: 1200px)"
                   />
+                  <source
+                    srcset="
+                      ./images/portfolio/portfolio-tabl-4.jpeg   1x,
+                      ./images/portfolio/portfolio-tabl-4x2.jpeg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/portfolio-4.jpeg        1x,
+                      ./images/portfolio/portfolio-4x2.jpeg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    src="./images/portfolio/portfolio-4.jpeg"
+                    alt="наушники"
+                    class="team-foto"
+                  />
+                </picture>
+                <div class="portfolio-top-wrap">
                   <p class="portfolio-top-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -196,13 +343,35 @@
             <li class="portfolio-link">
               <a href="" class="link active">
                 <div class="portfolio-top-wrap">
-                  <img
-                    src="./images/portfolio5.jpeg"
-                    alt="коробочки"
-                    width="370"
-                    height="294"
-                    class="portfolio-foto"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio5.jpeg                   1x,
+                        ./images/portfolio/portfolio-desc-5x2.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-tabl-5.jpeg   1x,
+                        ./images/portfolio/portfolio-tabl-5x2.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/team/portfolio-5.jpeg        1x,
+                        ./images/portfolio/portfolio-5x2.jpeg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio/portfolio-5.jpeg"
+                      alt="коробочки"
+                      class="team-foto"
+                    />
+                  </picture>
+
                   <p class="portfolio-top-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -218,13 +387,35 @@
             <li class="portfolio-link">
               <a href="" class="link active">
                 <div class="portfolio-top-wrap">
-                  <img
-                    src="./images/portfolio6.jpeg"
-                    alt="компютер apple"
-                    width="370"
-                    height="294"
-                    class="portfolio-foto"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio6.jpeg                   1x,
+                        ./images/portfolio/portfolio-desc-6x2.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-tabl-6.jpeg   1x,
+                        ./images/portfolio/portfolio-tabl-6x2.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/team/portfolio-6.jpeg        1x,
+                        ./images/portfolio/portfolio-6x2.jpeg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio/portfolio-6.jpeg"
+                      alt="компютер apple"
+                      class="team-foto"
+                    />
+                  </picture>
+
                   <p class="portfolio-top-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -240,13 +431,35 @@
             <li class="portfolio-link">
               <a href="" class="link active">
                 <div class="portfolio-top-wrap">
-                  <img
-                    src="./images/portfolio7.jpeg"
-                    alt="откритая книга"
-                    width="370"
-                    height="294"
-                    class="portfolio-foto"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio7.jpeg                   1x,
+                        ./images/portfolio/portfolio-desc-7x2.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-tabl-7.jpeg   1x,
+                        ./images/portfolio/portfolio-tabl-7x2.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/team/portfolio-7.jpeg        1x,
+                        ./images/portfolio/portfolio-7x2.jpeg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio/portfolio-7.jpeg"
+                      alt="откритая книга"
+                      class="team-foto"
+                    />
+                  </picture>
+
                   <p class="portfolio-top-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -262,13 +475,35 @@
             <li class="portfolio-link">
               <a href="" class="link active">
                 <div class="portfolio-top-wrap">
-                  <img
-                    src="./images/portfolio8.jpeg"
-                    alt="бирка лаб ель таг"
-                    width="370"
-                    height="294"
-                    class="portfolio-foto"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio8.jpeg                   1x,
+                        ./images/portfolio/portfolio-desc-8x2.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-tabl-8.jpeg   1x,
+                        ./images/portfolio/portfolio-tabl-8x2.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/team/portfolio-8.jpeg        1x,
+                        ./images/portfolio/portfolio-8x2.jpeg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio/portfolio-8.jpeg"
+                      alt="бирка лаб ель таг"
+                      class="team-foto"
+                    />
+                  </picture>
+
                   <p class="portfolio-top-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -284,13 +519,35 @@
             <li class="portfolio-link">
               <a href="" class="link active">
                 <div class="portfolio-top-wrap">
-                  <img
-                    src="./images/portfolio9.jpeg"
-                    alt="ноутбук с откритим приложением"
-                    width="370"
-                    height="294"
-                    class="portfolio-foto"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio9.jpeg                   1x,
+                        ./images/portfolio/portfolio-desc-9x2.jpeg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-tabl-9.jpeg   1x,
+                        ./images/portfolio/portfolio-tabl-9x2.jpeg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/team/portfolio-9.jpeg        1x,
+                        ./images/portfolio/portfolio-9x2.jpeg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio/portfolio-9.jpeg"
+                      alt="ноутбук с откритим приложением"
+                      class="team-foto"
+                    />
+                  </picture>
+
                   <p class="portfolio-top-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить

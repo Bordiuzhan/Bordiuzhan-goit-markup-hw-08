@@ -210,14 +210,21 @@ body {
 
 .modal-lable-check {
   display: flex;
-  font-size: 14px;
-  line-height: 1.7142857143;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   margin-top: 20px;
   margin-bottom: 30px;
   align-items: center;
   justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .modal-lable-check {
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
 }
 
 .check-text + span {
@@ -237,10 +244,17 @@ body {
 }
 
 .modal-lable-check a {
-  font-size: 14px;
-  line-height: 1.7142857143;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .modal-lable-check a {
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
 }
 
 .icon-check {
@@ -1095,6 +1109,10 @@ body {
     display: none;
   }
 }
+.menu-open-btn:hover,
+.menu-open-btn :focus {
+  fill: var(--accent-color);
+}
 
 .menu-mob {
   position: fixed;
@@ -1134,6 +1152,10 @@ body {
   right: 25px;
   background-color: transparent;
   border: none;
+}
+.menu-close-btn:hover,
+.menu-close-btn :focus {
+  fill: var(--accent-color);
 }
 
 .mob-nav__list:not(:last-child) {
