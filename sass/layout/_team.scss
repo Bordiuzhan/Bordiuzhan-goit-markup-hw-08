@@ -35,7 +35,6 @@
 }
 
 .team-item {
-  width: 450px;
   margin: 10px 0;
   @include tablet {
     width: 354px;
@@ -78,8 +77,6 @@
 
 .team-soc-item {
   @include size(44px, 44px);
-  // width: 44px;
-  // height: 44px;
   margin-left: 10px;
 
   &:first-child {

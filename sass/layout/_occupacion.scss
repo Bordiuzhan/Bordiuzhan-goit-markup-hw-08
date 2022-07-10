@@ -22,7 +22,6 @@
     position: relative;
 
     @include size(calc(100% / 3 - 30px), null);
-    // width: calc(100% / 3 - 30px);
     margin-left: 30px;
   }
 

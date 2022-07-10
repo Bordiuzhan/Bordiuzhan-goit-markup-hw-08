@@ -104,8 +104,6 @@
 .footer-box-icon {
   display: block;
   @include size(44px, 44px);
-  // width: 44px;
-  // height: 44px;
   margin-left: 10px;
 
   &:first-child {
@@ -118,8 +116,6 @@
   align-items: center;
   justify-content: center;
   @include size(100%, 100%);
-  // width: 100%;
-  // height: 100%;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   color: var(--bgc-basic-color);
@@ -185,8 +181,6 @@
 
 .subscribe-input {
   @include size(450px, 50px);
-  // width: calc(100%);
-  // height: 50px;
 
   margin-right: 5px;
   padding: 16px 15px;
