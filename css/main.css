@@ -811,8 +811,7 @@ body {
 }
 
 .subscribe-input {
-  width: 450px;
-  height: 50px;
+  width: 230px;
   padding: 16px 15px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -820,6 +819,12 @@ body {
   border-radius: 4px;
   outline: rgba(0, 0, 0, 0);
   color: var(--bgc-basic-color);
+}
+@media screen and (min-width: 480px) {
+  .subscribe-input {
+    width: 450px;
+    height: 50px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .subscribe-input {

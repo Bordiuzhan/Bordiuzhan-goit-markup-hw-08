@@ -180,7 +180,10 @@
 }
 
 .subscribe-input {
-  @include size(450px, 50px);
+  width: 230px;
+  @include mobile {
+    @include size(450px, 50px);
+  }
   @include desktop {
     margin-right: 5px;
   }
