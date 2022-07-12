@@ -24,6 +24,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 30px;
 
   @include tablet {
     flex-direction: row;
@@ -35,9 +36,10 @@
 }
 
 .team-item {
-  margin: 10px 0;
+  overflow: hidden;
+  width: 100%;
   @include tablet {
-    width: 354px;
+    width: calc(100% / 2 - 15px);
   }
   @include desktop {
     width: 270px;

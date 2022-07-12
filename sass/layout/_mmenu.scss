@@ -68,6 +68,7 @@
 
 .auth-mob {
   margin-bottom: 64px;
+
   &__list:not(:last-child) {
     margin-bottom: 32px;
   }
@@ -76,7 +77,14 @@
     font-size: 34px;
     line-height: calc(40 / 34);
     letter-spacing: 0.02em;
-    color: #757575;
+    color: var(--accent-color);
+  }
+  &__link.active {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
   }
 }
 
@@ -89,9 +97,8 @@
     border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
   &__item {
-    font-weight: 500;
     font-size: 18px;
-    line-height: 22px;
+    line-height: calc(22 / 18);
     letter-spacing: 0.02em;
     color: #2196f3;
   }

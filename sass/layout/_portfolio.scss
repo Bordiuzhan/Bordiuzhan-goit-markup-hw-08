@@ -40,11 +40,12 @@
 }
 //  ------cancelar tamano-----!!!!!!!!!!!!//
 .portfolio-link {
-  // width: 450px;
+  width: 100%;
   @include tablet {
-    width: calc(100% / 2 - 30px);
-    // width: 354px;
-    // height: 440px;
+    width: calc(100% / 2 - 15px);
+  }
+  @include desktop {
+    width: calc(100% / 3 - 20px);
   }
   transition: box-shadow 250ms var(--cubic);
 
